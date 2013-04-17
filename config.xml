@@ -7,21 +7,18 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>APP Simulado</name>
+    <name>AA Concursos</name>
 
     <description>
-        Exemploa APP Simulado. 
+        Exemplo AA Concursos. 
     </description>
 
-    <author href="https://build.phonegap.com" email="support@phonegap.com">
-        Hardeep Shoker 
+    <author href="https://aaconcursos.com" email="contato@aaconcursos.com">
+        Dyeison Schreiner 
     </author>
 
-	<feature name="http://api.phonegap.com/1.0/battery"/>
-	<feature name="http://api.phonegap.com/1.0/camera"/>
-	<feature name="http://api.phonegap.com/1.0/contacts"/>
+	
 	<feature name="http://api.phonegap.com/1.0/file"/>
-	<feature name="http://api.phonegap.com/1.0/geolocation"/>
 	<feature name="http://api.phonegap.com/1.0/media"/>
 	<feature name="http://api.phonegap.com/1.0/network"/>
 	<feature name="http://api.phonegap.com/1.0/notification"/>
