@@ -10,7 +10,5 @@
 	$query = "INSERT INTO usuario (nome,email,senha) VALUES ('$nome','$email','$senha')";
     $insert = mysql_query($query,$con);
 	
-	mysqli_close($con);
-	
 ?>
 
