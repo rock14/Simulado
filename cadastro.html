@@ -6,8 +6,31 @@
 		<link rel="stylesheet" href="jquery.mobile-1.2.0.css" />
 		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
-		<script type="text/javascript" src="cordova-2.2.0.js"></script>    
-    
+		<script type="text/javascript" src="cordova-2.2.0.js"></script>
+        
+        <!-- Inicio valida email -->
+        <script language="javascript" type="text/javascript">
+		$(document).ready(function(){
+			$("#form1").submit(function(){
+				 var email = $("#email").val();
+				 if(email != "")
+				 {
+    				var filtro = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    				if(filtro.test(email))
+					{
+						alert("Cadastro realizado com sucesso!");
+						return true;
+					} else {
+      					alert("Este endereço de email não é válido!");
+    					return false;
+					}
+				} else {
+					alert('Digite um email!'); return false;
+				}
+			});
+		});
+    </script>
+<!-- Fim valida email -->
         
 	</head>
     
@@ -20,7 +43,7 @@
 			</div>
 			
             <div data-role="content"> 
-            <form id="form1" method="POST" action="cadastro.php">
+            <form id="form1" method="POST" action="http://www.aaconcursos.com/app/cadastro.php">
             <label>Nome:</label><input type="text" name="nome" id="nome" size="50"><br>
             <label>Email:</label><input type="text" name="email" id="email" size="50"><br>
             <label>Senha:</label><input type="password" name="senha" id="senha" size="15"><br>
